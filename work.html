@@ -6,22 +6,16 @@
     <title>Document</title>
 </head>
 <body>
-    <h1> Methods</h1>
-    <p> Basic Methods</p>
+    <h1> Javascript Objects</h1>
+    <p> There are 2 different ways for accessing objects</p>
+    <P id="demo"></P>
     <script> 
-        var str="wOnDeRfUl"
-        document.write(str.toUpperCase());
-        document.write("<br>");
-        document.write(str.toLowerCase());
-        document.write("<br>");
-        document.write(str.Startswith('i'));
-        document.write("<br>")
+     var person={
+        name:"i",
+        age:20,
 
-        var str1 = "I am learning Methods";
-        var patt = new RegExp(str);
-        var res  = patt.test(str);
-        document.write(res);
-
+     };
+     document.getElementById("demo").innerHTML=person.name+" am"+person.age +" years"
     </script>
 </body>
 </html>
