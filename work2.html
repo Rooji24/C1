@@ -1,37 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <p id="12"> HI!</p>
-    <script> 
-var day;
-switch(new Date().getDate() ){
-case 0:
-    day="Monday";
-    break;
-    case 1:
-    day="Tuesday";
-    break;
-    case 2 :
-   day="Wednesday";
-   break;
-case 3 :
-    day="Thrusday" ;
-    break;
- case  4:
-    day="Friday";
-    }
-document.getElementById(12).innerHTML= "Today is "+  day;
+<html> 
+    <body> 
+        <h2> javascript join and pop</h2>
+        <p> the join() method is used to join the array elements into string and pop() is used to remove the element</p>
+        <p id=" 1234"> </p>
+        <p id="7890"> </p>
+        <p id=" 5678"> </p>
+        <script> 
+            var fruits=[ "Bananas", "oranges", " apples"," mangoes"];
+            document.getElementById("1234").innerHTML = fruits.join("*");
+            document.getElementById("7890").innerHTML = fruits;fruits.pop();
+            document.getElementById("5678").innerHTML = fruits;
+        
 
-
-
-
-
-
-    </script>
-</body>
+        </script>
+    </body>
 </html>
