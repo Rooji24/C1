@@ -1,11 +1,29 @@
-<html> 
+<!DOCTYPE html>
+<head> 
+    <title> js</title>
     <body> 
-        <p> Adding js as separate file </p>
-        <button type="button" oneclick = "myfunction()"> click </button> 
-        <p id="demo" > </p>
-        <script src ="script.js"> 
+        <p> click on the button to get a time based greetings:</p>
+        <button onclick="myFunction()"> try it </button>
+        <p id="hour"> </p>
+        <p id=" greet"> </p>
+        <script>
+            function  myFunction(){
+                var greeting;
+                var time = new Date().getHours();
+                if (time<10){
+                    greeting  = "good morning";
 
+                }
+                else if (time < 20){
+                    greeting = " good day";
+
+                }
+                else {
+                    greeting = " good day ";
+                }
+                document.getElementById("hour").innerHTML =" current hour is :"+time;
+                document.getElementById("greet").innerHTML = greeting;
+            }
         </script>
     </body>
-    
-</html>
+</head>
