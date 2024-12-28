@@ -1,26 +1,23 @@
 <!DOCTYPE html>
 <html> 
-    <head> 
-        <title> Datatypes </title>
-        <body>
-            <h1> loops</h1>
-            <p id="demo"> This will print out random numbers </p>
-            <script>
-                var text="";
-                var i = 4;
-                while(i<=30){
-                text+= "<br> The number is:" + i;
-                i++;
-                }
-                document.getElementById("demo").innerHTML=text;
-
-    
-            </script>
+    <body> 
+        <h2> Array sorting</h2>
+        <p> click the button to sort the array in ascending order</p>
+        <button onclick="ascending()"> Ascending order </button>
+        <button onclick="descending()"> Descending order </button>
+        <p id="result"> </p>
+        <script>
+            var points = [ 40,100,34,1,4,35];
+            document.getElementById("result").innerHTML=points;
+            function ascending() {
+                points.sort(function(a,b) {return a - b});
+                document.getElementById("result").innerHTML= points;
             
-
-
-        </body>
-
-        
-    </head>
+            }
+            function descending(){
+                points.sort(function(a,b) {return b - a });
+                document.getElementById("result").innerHTML= points;
+            }
+        </script>
+    </body>
 </html>
