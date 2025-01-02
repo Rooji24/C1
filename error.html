@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html> 
+    <title> appearance of the code despite the error</title>
+    <p id="error_message"></p>
+    <script>
+        try{
+            addalert("WELCOME EVERYONE!!");
+        }
+        catch(err) {
+            document.getElementById("error_message").innerHTML = err.message
+
+        }
+    </script>
+</html>
