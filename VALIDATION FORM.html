@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function validateForm(){
+                var x = document.forms["myForms"]["fname"].value;
+                if (x == ""){
+                    alert("Name must be filled out");
+                    return false;
+                }
+                var y = document.forms["myForms"]["fage"].value;
+                if ( y >= "18"){
+                    alert("Your are eligible to enter the form");
+                    return true;
+
+                }
+            }
+        </script>
+       
+
+    </head>
+    <body>
+        <form name = "myForm" onsubmit = "validateForm()">
+            Name: <input type = "text" name = "fname">
+            <input type = "submit" value = "Submit">
+            Age : <input type="onsubmit" name = "fage">
+            <input type = "submit" value=" submit">
+            <p id="messsage"></p>
+
+        </form>
+    </body>
+</html>
