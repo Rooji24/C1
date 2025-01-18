@@ -1,7 +1,10 @@
-.about{
-    background-color: #313552;
-    border-radius: 0.5rem;
+#social-media {
+    background-color: aquamarine;
 }
-.card {
-    border-bottom: 8px solid #f5ba09;
+.media_link {
+    padding: 1rem;
+    max-width: 15rem;
+    margin-left: 1 rem;
+    border: 2px solid blanchedalmond;
+    border-radius: 0.5rem;
 }
